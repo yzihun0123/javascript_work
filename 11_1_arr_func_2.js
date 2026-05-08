@@ -62,3 +62,12 @@ console.log(data.filter(x => x % 2 === 0))
 // 2. 3보다 큰 수를 오름차순 정렬 출력
 // 체이닝(chainning) : 원본 -> filter -> sort
 console.log(data.filter(x => x > 3).sort((a, b) => a-b));
+
+// find()와 findIndex() 함수
+numbers = [1, 8, 7, 5, 3];
+// 첫번째로 조건과 일치하는 값을 찾음. 없으면 undefind
+console.log(numbers.find(x => x % 2 === 0));
+console.log(numbers.findIndex(x => x % 2 === 0));
+
+// reduce() 함수 -- 누적을 할 때 사용하는 함수
+console.log(numbers.reduce((x, y) => x * y, 1))
